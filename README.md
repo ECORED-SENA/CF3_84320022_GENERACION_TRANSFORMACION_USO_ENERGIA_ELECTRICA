@@ -1,8 +1,8 @@
-# **sena-base-2021 v6.0.5**
+# **sFactor de potencia**
 
 ## **Enlace GitHubPages**
 
-[https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/](https://ecored-sena.github.io/ECORED_TEMPLATE_REPO/)
+[https://ecored-sena.github.io/CF3_84320022_GENERACION_TRANSFORMACION_USO_ENERGIA_ELECTRICA/](https://ecored-sena.github.io/CF3_84320022_GENERACION_TRANSFORMACION_USO_ENERGIA_ELECTRICA/)
 
 #
 

@@ -2,19 +2,78 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 10%
+    right: 20%
   &-2
+    animation: float2 2.8s ease-in-out infinite alternate
+    position: absolute
+    top: 55%
+    right: 70%
+  &-3
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 60%
+    right: 10%
 
 @keyframes float1
   0%
     transform: translateY(20px)
-
   100%
     transform: translateY(0px)
 
+@keyframes float2
+  0%
+    transform: translateX(20px)
+  100%
+    transform: translateX(0px)
+
+.banner-principal__row .banner-principal__img
+  width: 450px
+  @media screen and ( max-width: $bp-max-lg )
+    width: 400px
+
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/img1.png") !important
+
+.tarjeta.tarjeta--azul1
+  background-color: #E3EAF7
+.tarjeta.tarjeta--azul1.acordion__activo
+  background-color: #FCF7DA
+.acordion__accion__btn--a
+  background-color: #F89C33
+
+.bg
+  &-c1
+    background-color: #BACBEC
+    height: 100%
+  &-c2
+    background-color: #F7ECA4
+    border-radius: 15px
+  &-c3
+    background-color: #FFFFFF
+    border-radius: 15px
+  &-c4
+    background-image: url(../assets/curso/tema1/img2.png)
+    background-repeat: no-repeat
+    margin-inline: -3.2rem !important
+    background-size: contain
+    background-position: center
+  &-c5
+    background-image: url(../assets/curso/tema1/img2.svg)
+    background-repeat: repeat-x
+    background-position: center
+    @media screen and ( max-width: $bp-max-md )
+      background-repeat: repeat
+  &-c6
+    background-color: #E2DACC
+    border-radius: 15px
+  &-c7
+    background-color: #BACBEC
+    border-radius: 15px
+  &-c8
+    background-color: #FF4947
+    border-radius: 15px
+  &-c9
+    background-color: #FCF7DA
+  &-c10
+    background-color: #E2DACC
