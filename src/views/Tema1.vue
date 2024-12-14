@@ -19,7 +19,7 @@
                       li.d-flex.mb-0
                         i.fas.fa-bolt(style="color: #FF4947")
                         |
-                        p.mb-0 Si la máquina convierte energía mecánica en energía eléctrica, se llama generador.
+                        p.mb-0 Si la máquina convierte energía mecánica en energía eléctrica, se llama #[b generador].
               .row
                 .col-12
                   .p-3.bg-c3
@@ -27,7 +27,7 @@
                       li.d-flex.mb-0
                         i.fas.fa-bolt(style="color: #FF4947")
                         |
-                        p.mb-0 Si convierte energía eléctrica en energía mecánica, se denomina motor.
+                        p.mb-0 Si convierte energía eléctrica en energía mecánica, se denomina #[b motor].
         p.mb-0 Esta relación se conoce como el principio de conservación de la energía electromecánica.
       .col-lg-5.mb-4.mb-lg-0.order-1.order-lg-2(data-aos="fade-left")
         figure
@@ -112,13 +112,143 @@
                 .row(titulo="Potencia aparente (S)")
                   .col-12
                     p.mb-0 Suma algebraica de las potencias activa y reactiva. Representa la potencia total suministrada y se mide en voltios-amperios (VA).
-    p.mb-4(data-aos="fade-right") En la siguiente figura, se presenta una representación geométrica del factor de potencia, donde se relacionan la potencia activa (P), la potencia aparente (S) y el ángulo de desfase (Φ).
+    p.mb-4(data-aos="fade-right") En la siguiente figura, se presenta una expresión matemática del factor de potencia aplicando el triángulo de potencias, donde se relacionan la potencia activa (P), la potencia aparente (S), la pontencia reactiva (Q), el ángulo de desfase (Φ) y el factor de potencia (cosΦ).
     .row.justify-content-center.mb-4
       .col-lg-8
         .titulo-sexto.color-acento-contenido(data-aos="fade-right")
           p.mb-0 #[b Figura 1.] Representación geométrica del factor de potencia
-        figure(data-aos="fade-left")
-          img(src='@/assets/curso/tema1/img5.svg', alt='La figura representa la relación matemática entre la potencia activa (P) y la potencia aparente (S) mediante el factor de potencia, definido como el coseno del ángulo Φ (⁅cos⁆⁅ ⁆⁅Φ⁆⁅ ⁆).', style="width: 800px").m-auto
+        .row.mb-4
+          .col-12
+            .p-4.p-lg-5.bg-c11
+              figure(data-aos="fade-left")
+                img(src='@/assets/curso/tema1/img5.svg', alt='La figura representa la relación matemática entre la potencia activa (P) y la potencia aparente (S) mediante el factor de potencia, definido como el coseno del ángulo Φ (⁅cos⁆⁅ ⁆⁅Φ⁆⁅ ⁆).', style="width: 600px").m-auto
+        p Aplicando el triángulo de Pitágoras obtenemos:
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mi S
+              mo =
+              msqrt
+                mrow
+                  msup
+                    mi P
+                    mn 2
+                  mo +
+                  msup
+                    mi Q
+                    mn 2
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mi P
+              mo =
+              msqrt
+                mrow
+                  msup
+                    mi P
+                    mn 2
+                  mo +
+                  msup
+                    mi Q
+                    mn 2
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mi Q
+              mo =
+              msqrt
+                mrow
+                  msup
+                    mi S
+                    mn 2
+                  mo +
+                  msup
+                    mi P
+                    mn 2
+        p Sabiendo previamente que:
+        .row
+          .col-12
+            math.ms-3
+              mrow
+                mi Potencia aparente
+                mo =
+                mi Voltaje
+                mo *
+                mi Corriente
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mrow
+                mi S
+                mo =
+                mi V
+                mo *
+                mi i
+        p Aplicando las razones trigonométricas obtenemos:
+        .row.mb-3
+          .col-auto
+            math.ms-3
+              mrow
+                mi F
+                mi p
+                mo =
+                mi CosΦ
+                mo =
+                mfrac
+                  mrow
+                    mn P
+                  mrow
+                    mn S
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mrow
+                mi Arcoseno
+                mo =
+                mrow
+                  msup
+                    mi Cos
+                    mn -1
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mrow
+                msup
+                  mi Cos
+                  mn -1
+                mn (FP)
+              mo =
+              mn Φ
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mrow
+                mi P
+                mo =
+                mi S
+                mo *
+                mi CosΦ
+                mo =
+                mi V
+                mo *
+                mi i
+                mo *
+                mi CosΦ
+        .row.mb-3
+          .col-12
+            math.ms-3
+              mrow
+                mi Q
+                mo =
+                mi S
+                mo *
+                mi SenΦ
+                mo =
+                mi V
+                mo *
+                mi i
+                mo *
+                mi SenΦ
     .row
       .col-lg-7.mb-4.mb-lg-0(data-aos="fade-right")
         p Las consecuencias de un bajo factor de potencia son:
@@ -199,14 +329,13 @@
           .col-12
             .p-4.bg-c9
               p.mb-0 #[b Ejemplo 1:]
-              p Calcule el factor de potencia de un motor que indica 1800W (P) y una potencia aparente de 2040 VA (S). También calcule el ángulo de fase entre el voltaje de línea y la corriente de línea.
+              p Calcule el factor de potencia de un motor que indica 1800 W (P) y una potencia aparente de 2040 VA (S). También calcule el ángulo de fase entre el voltaje de línea y la corriente de línea.
               p #[b Solución]
               .row.mb-3
                 .col-12
-                  math
+                  math.ms-3
                     mrow
-                      mi F
-                      mi p
+                      mn Factor de potencia
                       mo =
                       mfrac
                         mrow
@@ -216,101 +345,95 @@
                       mo =
                       mfrac
                         mrow
-                          mn 1800
+                          mi 1800 Watts
                         mrow
-                          mn 2040
+                          mi 2040 VA
                       mo =
-                      mi 0882
+                      mn 0.882
+              p #[b Nota:] Para el siguiente paso se sugiere validar previamente, que la calculadora se encuentre configurada para trabajar en grados sexagesimales (DEG).
               .row.mb-3
                 .col-12
-                  math
+                  math.ms-3
                     mrow
-                      mn Cos
-                      mo =
-                      mn 0882
-              p Por lo tanto, = 28.1º
+                      msup
+                        mi Cos
+                        mn -1
+                      mn (FP)
+                    mo =
+                    mrow
+                      msup
+                        mi Cos
+                        mn -1
+                      mn 0.882
+                    mo = 
+                    mn 28.11°
         figure
           img(src='@/assets/curso/tema1/img8.png', alt='', style="width: 600px").m-auto
       .col-lg-6(data-aos="fade-left")
         .p-4.bg-c10
           p.mb-0 #[b Ejemplo 2:]
-          p Un motor monofásico absorbe una corriente de 5A de una línea de 120V y 60Hz. El factor de potencia del motor es de 65 por ciento.
+          p Un motor monofásico absorbe una corriente de 5 A de una línea de 120 V y 60 Hz. El factor de potencia del motor es de 65 por ciento (0.65).
           p.mb-0 #[b Calcule:]
-          p.mb-0 #[b a.] La potencia activa absorbida por el motor.
+          p.mb-0 #[b a.] La potencia aparente absorbida por el motor.
           p #[b b.] La potencia reactiva suministrada por la línea.
           p.mb-0 #[b Solución]
-          p #[b a.] La potencia aparente absorbida por el motor es:
+          p #[b a.] La potencia aparente (S) absorbida por el motor es:
           .row.mb-3
             .col-12
               math.ms-3
-                msub
+                mrow
                   mi S
-                  mi m
-                mo =
-                mi E
-                mi l
-                mo =
-                mn 120
-                mi x
-                mn 5
-                mo =
-                mn 600
-                mi V
-                mi A
-          p #[b b.] La potencia activa absorbida por el motor es
+                  mo =
+                  mi V
+                  mo *
+                  mi i
+                  mo =
+                  mn 120 V
+                  mo *
+                  mn 5 A
+                  mo =
+                  mn 600 VA
+          p #[b b.] Para hallar la potencia reactiva (Q), primero debemos saber la potencia activa (P):
           .row.mb-3
             .col-12
               math.ms-3
-                msub
+                mrow
+                  mi P
+                  mo =
                   mi S
-                  mi m
-                mo =
-                mi C
-                mi o
-                mi s
-                mi q
+                  mo *
+                  mi CosΦ
+                  mo =
+                  mn 600 VA
+                  mo *
+                  mn 0.65
+                  mo =
+                  mn 390 Watts
           .row.mb-3
             .col-12
               math.ms-3
                 msub
                   mi Q
-                  mi m
                 mo =
                 msqrt
-                  mrow
+                  msup
                     mi S
-                    msup
-                      mi m
-                      mn 2
-                    mo +
+                    mn 2
+                  mo -
+                  msup
                     mi P
-                    msup
-                      mi m
-                      mn 2
-          .row.mb-3
-            .col-12
-              math.ms-3
-                msub
-                  mi Q
-                  mi m
+                    mn 2
                 mo =
                 msqrt
-                  mrow
-                    msup
-                      mi 600
-                      mn 2
-                    mo +
-                    msup
-                      mi 390˄2
-                      mn 2
-          .row.mb-3
-            .col-12
-              math.ms-3
-                msub
-                  mi Q
-                  mi m
-                mo = 
-                mn 456 var
+                  msup
+                    mi (600 VA)
+                    mn 2
+                  mo -
+                  msup
+                    mi (390 Watts)
+                    mn 2
+                mo =
+                mn 455.96 VAR
           p.mb-0 Observe que el motor absorbe aún más potencia reactiva que activa de la línea. Esto carga la línea con una cantidad relativamente grande de potencia improductiva.
       
 </template>

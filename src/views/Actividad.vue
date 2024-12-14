@@ -21,7 +21,7 @@ export default {
       preguntas: [
         {
           id: 1,
-          texto: 'La potencia eléctrica se mide en watts.',
+          texto: 'La potencia eléctrica se mide en <i>watts</i>.',
           imagen: require('@/assets/actividad/imagen1.png'),
           barajarRespuestas: true,
           opciones: [
