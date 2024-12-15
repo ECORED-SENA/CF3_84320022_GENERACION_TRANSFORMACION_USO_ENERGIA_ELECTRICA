@@ -145,7 +145,7 @@
               msqrt
                 mrow
                   msup
-                    mi P
+                    mi S
                     mn 2
                   mo +
                   msup
@@ -367,6 +367,75 @@
                       mn 0.882
                     mo = 
                     mn 28.11°
+              p Se halla la corriente de línea para una alimentación de 220 V y para 110 V, según aplique el caso, se seleccionan posteriormente los demás elementos electrónicos, protecciones y conductores.
+              p Despejando la corriente (i) de la siguiente formula:
+              .row.mb-3
+                .col-12
+                  math.ms-3
+                    mrow
+                      mi P
+                      mo =
+                      mi V
+                      mo *
+                      mi i
+                      mo *
+                      mi CosΦ
+              p Obtenemos:
+              .row.mb-3
+                .col-12
+                  math.ms-3
+                    mrow
+                      mi i
+                      mo =
+                      mi P
+                      mo *
+                      mi V
+                      mo *
+                      mi CosΦ
+              .row
+                .col-12
+                  math.ms-3
+                    mrow
+                      msub
+                        mi i
+                        mn (220 V)
+                      mo =
+                      mi 1800 Watts
+                      mo /
+                      mi 220 V
+                      mo *
+                      mi 0.882
+              .row.mb-3
+                .col-12
+                  math.ms-3
+                    mrow
+                      msub
+                        mi i
+                        mn (220 V)
+                      mo =
+                      mn 9.27 A
+              .row
+                .col-12
+                  math.ms-3
+                    mrow
+                      msub
+                        mi i
+                        mn (110 V)
+                      mo =
+                      mi 1800 Watts
+                      mo /
+                      mi 110 V
+                      mo *
+                      mi 0.882
+              .row
+                .col-12
+                  math.ms-3
+                    mrow
+                      msub
+                        mi i
+                        mn (110 V)
+                      mo =
+                      mn 18.55 A
         figure
           img(src='@/assets/curso/tema1/img8.png', alt='', style="width: 600px").m-auto
       .col-lg-6(data-aos="fade-left")
