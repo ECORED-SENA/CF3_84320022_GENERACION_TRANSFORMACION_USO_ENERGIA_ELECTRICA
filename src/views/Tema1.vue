@@ -147,7 +147,7 @@
                   msup
                     mi S
                     mn 2
-                  mo +
+                  mo -
                   msup
                     mi Q
                     mn 2
@@ -161,7 +161,7 @@
                   msup
                     mi S
                     mn 2
-                  mo +
+                  mo -
                   msup
                     mi P
                     mn 2
@@ -388,7 +388,7 @@
                       mi i
                       mo =
                       mi P
-                      mo *
+                      mo /
                       mi V
                       mo *
                       mi CosΦ
